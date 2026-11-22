@@ -5,7 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 const posts = [
   {
     slug: "four-days-in-jaipur",
-    image: "/images/j2.png.",
+    image: "/images/j2.png",
     title: "Four Days in Jaipur: A Local's Guide to the Pink City",
     desc: "Where to eat, wander and watch the sunset, mapped around a stay at Rossiero.",
   },

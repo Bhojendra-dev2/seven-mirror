@@ -10,19 +10,17 @@ export default function CityBanner({
   onClick,
 }) {
   return (
-    <section className="w-full px-4 py-8 sm:px-6">
-      <div className="relative mx-auto w-full max-w-[1400px] overflow-hidden h-[920px] rounded-[30px] ">
+    <section className="w-full px-4 py-6 sm:px-6 sm:py-8">
+      <div className="relative mx-auto h-[480px] w-full max-w-[1400px] overflow-hidden rounded-[20px] sm:h-[640px] sm:rounded-[30px] lg:h-[920px]">
         {/* Hero Image */}
-        <div className="relative aspect-[1.52/1] w-full">
-          <Image
-            src={image}
-            alt="Luxury stay with city view"
-            fill
-            priority
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 840px"
-          />
-        </div>
+        <Image
+          src={image}
+          alt="Luxury stay with city view"
+          fill
+          priority
+          className="object-cover"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+        />
 
         {/* Avatar */}
         {avatar && (
@@ -34,11 +32,11 @@ export default function CityBanner({
         )}
 
         {/* Bottom Banner */}
-        <div className="absolute bottom-[5.5%] left-1/2 z-10 w-[1200px] -translate-x-1/2 sm:w-[86%]">
-          <div className="flex items-center gap-3 rounded-[20px] bg-white px-4 py-3 shadow-xl sm:gap-5 sm:rounded-full sm:px-7 sm:py-4">
+        <div className="absolute bottom-4 left-1/2 z-10 w-[calc(100%-24px)] max-w-[1200px] -translate-x-1/2 sm:bottom-[5.5%] sm:w-[86%]">
+          <div className="flex flex-col gap-3 rounded-[20px] bg-white px-4 py-4 shadow-xl sm:flex-row sm:items-center sm:gap-5 sm:rounded-full sm:px-7 sm:py-4">
             {/* Brand */}
             <div className="shrink-0">
-              <h2 className="font-serif text-[18px] font-bold tracking-[-1px] sm:text-[24px]">
+              <h2 className="font-serif text-[20px] font-bold tracking-[-1px] sm:text-[24px]">
                 {brand}
               </h2>
             </div>
@@ -48,15 +46,8 @@ export default function CityBanner({
 
             {/* Content */}
             <div className="min-w-0 flex-1">
-              <h3 className="text-[11px] font-semibold text-black sm:text-xs">
-                {title}
-              </h3>
-
-              <p className="mt-1 hidden text-[10px] leading-4 text-gray-600 sm:block">
-                {description}
-              </p>
-
-              <p className="mt-1 block truncate text-[9px] text-gray-600 sm:hidden">
+              <h3 className="text-xs font-semibold text-black">{title}</h3>
+              <p className="mt-1 line-clamp-2 text-[11px] leading-4 text-gray-600 sm:text-[10px]">
                 {description}
               </p>
             </div>
@@ -64,7 +55,7 @@ export default function CityBanner({
             {/* Button */}
             <button
               onClick={onClick}
-              className="shrink-0 rounded-full bg-[#222] px-4 py-3 text-[9px] font-medium text-white transition-all cursor-pointer duration-300 hover:bg-black sm:px-6 sm:py-3.5 sm:text-[10px]"
+              className="w-full shrink-0 cursor-pointer rounded-full bg-[#222] px-6 py-3 text-[11px] font-medium text-white transition-all duration-300 hover:bg-black sm:w-auto sm:py-3.5 sm:text-[10px]"
             >
               {buttonText}
               <span className="ml-1">→</span>

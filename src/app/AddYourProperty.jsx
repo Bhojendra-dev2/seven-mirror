@@ -47,10 +47,10 @@ export default function AddYourProperty({ image = "/images/proparties.png" }) {
 
         <Link
           href="/add-property"
-          className="mt-6 flex h-[700px] w-[660px]  items-center justify-center gap-1.5 rounded-full bg-white px-8 text-xs font-semibold text-neutral-950 transition hover:bg-neutral-100 lg:mt-[3.3cqw] lg:h-[4.65cqw] lg:w-[14.8cqw] lg:gap-[0.3cqw] lg:px-0 lg:text-[0.9cqw]"
+          className="mt-6 flex h-12 w-full items-center justify-center gap-1.5 rounded-full bg-white px-8 text-xs font-semibold text-neutral-950 transition hover:bg-neutral-100 sm:h-14 sm:w-auto sm:self-start lg:mt-[3.3cqw] lg:h-[4.65cqw] lg:w-[14.8cqw] lg:gap-[0.3cqw] lg:px-0 lg:text-[0.9cqw]"
         >
           Enquire For Partner{" "}
-          <FiArrowRight className="lg:h-[0.9cqw] lg:w-[0.9cqw]" />
+          <FiArrowRight className="h-4 w-4 lg:h-[0.9cqw] lg:w-[0.9cqw]" />
         </Link>
       </div>
     </section>
